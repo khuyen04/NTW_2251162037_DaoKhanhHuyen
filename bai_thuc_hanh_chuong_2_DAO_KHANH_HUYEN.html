@@ -18,6 +18,16 @@
             color: rgb(255, 0, 234);
             text-decoration: underline;
         }
+        div {
+            margin-left: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        form label {
+            display: inline-block;
+            width: 150px;
+        }
     </style>
     </head>
     <body>
@@ -86,5 +96,155 @@
                 <input type="text" id="note" name="note" placeholder="Ghi chú"><br><br>
 
                 <button type="button">Thêm Sinh Viên</button>
+                <hr>
+
+     <h2>BÀI TẬP 03</h2>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" rowspan="2">Student</th>
+                <th colspan="4">Exam</th>
+                <th colspan="4">2nd Exam</th>
+                <th colspan="2" rowspan="2">3rd Exam</th>
+            </tr>
+            <tr>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                <th rowspan="2">Grade</th>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                <th rowspan="2">Grade</th>
+            </tr>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <td>8</td>
+                <td>5</td>
+                <td>7</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <th>NR</th>
+                <th>R</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>80549061</td>
+                <td>John</td>
+                <td>70%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>17.6</td>
+                <td colspan="4"></td>
+                <td>17.6</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>80549062</td>
+                <td>Mary</td>
+                <td>10%</td>
+                <td>50%</td>
+                <td>50%</td>
+                <td>6.8</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>50%</td>
+                <td>16.5</td>
+                <td>16.5</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>80549063</td>
+                <td>Claire</td>
+                <td colspan="4"></td>
+                <td>50%</td>
+                <td>50%</td>
+                <td>50%</td>
+                <td>50%</td>
+                <td>10.0</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="#">
+        <h2>BÀI TẬP 04</h2>
+        <h3>Basic Info<hr></h3>
+        <div>
+            <label><b>Employee ID</b></label>
+            <span type="text" name="EmployeeId" id="EmployeeId">9</span><br>
+
+            <label for="lastName"><b>Last Name</b></label>
+            <span type="text" name="lastName" id="lastName">Dodsworth</span><br>
+
+            <label for="firstName"><b>First Name</b></label>
+            <input type="text" name="firstName" id="firstName" value="Anne"><br>
+
+            <label for="gender"><b>Gender</b></label>
+            <input type="radio" name="male" value="Male">Male
+            <input type="radio" name="female" value="Female">Female
+            <input type="radio" name="xxx" value="XXX">XXX
+            <input type="radio" name="yyy" value="YYY">YYY<br>
+            <label for="title"><b>Title</b></label>
+            <input type="text" name="title" id="title" value="Sales Representative"><br>
+
+            <label for="suffix"><b>Sufix</b></label>
+            <input type="text" name="suffix" id="suffix" value="Ms."><br>
+            <label for="birthDate"><b>BirthDate</b></label>
+            <input type="datetime" name="birthDate" id="birthDate" value="1969-07-02 00:00:00"><br>
+            <label for="hireDate"><b>HireDate</b></label>
+            <input type="datetime" name="hireDate" id="hireDate" value="1964-11-15 00:00:00"><br>
+            <label for="hireDate"><b>SSN # (if applicable)</b></label>
+            <input type="text" name="ssn" id="ssn"><br>
+            <label for="reports"><b>Reports</b></label>
+            <select type="select" name="reports" id="reports">
+                <option value="Buchanan">Buchanan</option>
+            </select><br>
+        </div>
+        <h3>Contact Info<hr></h3>
+        <div>
+            <label for="email"><b>Email</b></label>
+            <input type="text" name="email" id="email" placeholder="name@example.com"><br>
+
+            <label for="address"><b>Address</b></label>
+            <input type="text" name="address" value="7 Houndstooth Rd."><br>
+            <label for="city"><b>City</b></label>
+            <input type="text" name="city" id="city" value="London"><br>
+
+            <label for="region"><b>Region</b></label>
+            <input type="text" name="region" id="region"><br>
+
+            <label for="postal"><b>Postal Code</b></label>
+            <input type="text" name="postal" id="postal" value="WG2 7LT"><br>
+
+            <label for="country"><b>Country</b></label>
+            <select type="select">
+                <option id="country" name="country">Country</option>
+            </select><br>
+
+            <label for="phoneNumber"><b>US Home Phone</b></label>
+            <input type="text" name="phoneNumber" id="phoneNumber" value="(234)234-2342"><br>
+
+            <label for="photo"><b>Photo</b></label>
+            <input type="text" name="photo" id="photo" value="EmpID9.bmp"><br>
+        </div>
+        <h3>Optional Info <hr></h3>
+        <div>
+            <label for="note"><b>Notes</b></label>
+            <textarea type="text" id="note" name="note">Anne has a BA degree in English fron St.Lawrence College. She í fluent in French and German.ZZZ.</textarea><br>
+            <label for="shift"><b>Preferred Shift</b></label>
+            <input type="checkbox" name="shift" id="shift">Regular
+            <input type="checkbox" name="gravy" id="gravy">Gravy Yard<br>
+             <label for="active"><b>Active</b></label>
+            <input type="checkbox" name="active" id="active" ><br>
+            <label for="">Are you human</label> <br>
+            <label for="">Click to change</label><br>
+            <input type="text">
+        </div>
+        <button type="submit">Submit</button>
+        <button type="button">Cancel</button>
+    </form>
     </body>
 </html>
