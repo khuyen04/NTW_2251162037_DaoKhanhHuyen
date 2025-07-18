@@ -3,44 +3,21 @@
     <head> 
         <title>BÀI THỰC HÀNH CHƯƠNG 2</title>
         <meta charset="UTF-8">
-        <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 8px;
-            border: 1px solid #333;
-            text-align: center;
-        }
-       
-        a {
-            color: rgb(255, 0, 234);
-            text-decoration: underline;
-        }
-        div {
-            margin-left: 20px;
-            margin-bottom: 20px;
-
-        }
-
-        form label {
-            display: inline-block;
-            width: 150px;
-        }
-    </style>
+        <link rel="stylesheet" href="bai_thuc_hanh_chuong3_DAO_KHANH_HUYEN.css">
     </head>
     <body>
         <h1>DANH SÁCH SINH VIÊN</h1>
         <table>
             <thead>
-                <th>STT</th>
-                <th>Mã SV</th>
-                <th>Họ tên</th>
-                <th>Email</th>
-                <th>Giới tính</th>
-                <th>Ngày sinh</th>
-                <th>Chức năng</th>
+                <tr class="header" >
+                    <th>STT</th>
+                    <th>Mã SV</th>
+                    <th>Họ tên</th>
+                    <th>Email</th>
+                    <th>Giới tính</th>
+                    <th>Ngày sinh</th>
+                    <th>Chức năng</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -48,7 +25,7 @@
                     <td>2251162037</td>
                     <td>Đào Khánh Huyền</td>
                     <td>2251162037@e.tlu.edu</td>
-                    <td>Hưng Yên</td>
+                    <td>Nữ</td>
                     <td>24/03/2004</td>
                     <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
                 </tr>
@@ -57,7 +34,7 @@
                     <td>2251162009</td>
                     <td>Trần Thị Khánh Hòa</td>
                     <td>2251162009@e.tlu.edu</td>
-                    <td>Hưng Yên</td>
+                    <td>Nữ</td>
                     <td>03/12/2004</td>
                     <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
                 </tr>
@@ -66,7 +43,7 @@
                     <td>2251162051</td>
                     <td>Vũ Hoài Liên</td>
                     <td>2251162051@e.tlu.edu</td>
-                    <td>Hà Nội</td>
+                    <td>Nữ</td>
                     <td>04/11/2004</td>
                     <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
                 </tr>
@@ -92,7 +69,7 @@
                 <input type="radio" id="Nữ" value="Nữ">
                 <label name="Nữ" id="Nữ">Nữ</label><br><br>
 
-                <label for="ghiChu">Ghi chú</label>
+                <label for="ghiChu">Ghi chú:</label>
                 <input type="text" id="note" name="note" placeholder="Ghi chú"><br><br>
 
                 <button type="button">Thêm Sinh Viên</button>
@@ -101,13 +78,13 @@
      <h2>BÀI TẬP 03</h2>
     <table>
         <thead>
-            <tr>
+            <tr class="header">
                 <th colspan="2" rowspan="2">Student</th>
                 <th colspan="4">Exam</th>
                 <th colspan="4">2nd Exam</th>
                 <th colspan="2" rowspan="2">3rd Exam</th>
             </tr>
-            <tr>
+            <tr class="headerQ">
                 <th>Q1</th>
                 <th>Q2</th>
                 <th>Q3</th>
@@ -117,7 +94,7 @@
                 <th>Q3</th>
                 <th rowspan="2">Grade</th>
             </tr>
-            <tr>
+            <tr class="headerN">
                 <th>Code</th>
                 <th>Name</th>
                 <td>8</td>
