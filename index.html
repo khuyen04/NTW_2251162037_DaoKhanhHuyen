@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>QL SINH VIÊN</title>
+</head>
+
+<body>
+    <ul>
+        <li><h1>QUẢN LÝ SINH VIÊN</h1></li>
+        <li><a href="#news">Trang chủ</a></li>
+    </ul>
+<div>
+    <form action=""style="flex-grow: 5">
+            <label for="maSV"><b>Mã SV:</b></label>
+            <input type="text" id="maSV" name="maSV" placeholder="Mã sinh viên"><br><br>
+        
+            <label for="hoTen"><b>Họ tên:</b></label>
+            <input type="text" id="fullName" name="fullName" placeholder="Họ tên"><br><br>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" placeholder="Email"><br><br>
+    
+            <label for="ngaySinh"><b>Email:</b></label>
+            <input type="date" id="date" name="date" placeholder="Ngày sinh"><br><br>
+
+            <label for="gioiTinh"><b>Giới tính:</b></label>
+            <input type="radio" id="nam" value="Nam">
+            <label name="Nam" id="Nam">Nam</label>
+            <input type="radio" id="Nữ" value="Nữ">
+            <label name="Nữ" id="Nữ">Nữ</label><br><br>
+
+            <label for="ghiChu"><b>Ghi chú:</b></label>
+            <input type="text" id="note" name="note" placeholder="Ghi chú"><br><br>
+
+            <button type="button">Thêm</button>
+    </form>
+    <table style="flex-grow: 5">
+        <thead>
+            <tr class="header" >
+                <th>STT</th>
+                <th>Mã SV</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Giới tính</th>
+                <th>Ngày sinh</th>
+                <th>Chức năng</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td>1</td>
+                <td>2251162037</td>
+                <td>Đào Khánh Huyền</td>
+                <td>2251162037@e.tlu.edu</td>
+                <td>Nữ</td>
+                <td>24/03/2004</td>
+                <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2251162009</td>
+                <td>Trần Thị Khánh Hòa</td>
+                <td>2251162009@e.tlu.edu</td>
+                <td>Nữ</td>
+                <td>03/12/2004</td>
+                <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2251162051</td>
+                <td>Vũ Hoài Liên</td>
+                <td>2251162051@e.tlu.edu</td>
+                <td>Nữ</td>
+                <td>04/11/2004</td>
+                <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+
+</html>
