@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý cửa hàng</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div style="flex-grow: 8" class="title">Trường Đại học Thủy Lợi</div>
+        <div style="flex-grow: 2" class="menu">
+            <a href="#">Trang chủ</a>
+            <a href="#">Quản lý cửa hàng</a>
+            <input type="text" placeholder="Nhập nội dung tìm kiếm">
+            <button>Tìm kiếm</button>
+        </div>
+    </div>
+    <div class="flex-body">
+        <div class="action-bar">
+            <div>
+                <button id="btn_add"><i class="fa-solid fa-plus"></i> THÊM</button>
+                <button class="add_export"><i class="fa-solid fa-upload"></i> XUẤT RA FILE<i
+                        class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="search-bar">
+                <div class="search-icon"><i class="fa-solid fa-angle-right"></i></div>
+                <input type="text" name="search" id="search" placeholder="Tìm kiếm giao dịch">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div class="result">
+                <span>Kết quả</span>
+                <select name="result-select" id="select">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+        </div>
+        <div class="table-wrapper">
+            <table class="table-container">
+                <thead>
+                    <tr class="header">
+                        <th>x</th>
+                        <th>Hành dộng</th>
+                        <th>ID</th>
+                        <th><i class="fa-solid fa-sort"></i> Khách hàng</th>
+                        <th><i class="fa-solid fa-sort"></i> Nhân viên</th>
+                        <th><i class="fa-solid fa-sort"></i> Số tiền</th>
+                        <th><i class="fa-solid fa-sort"></i> Ngày mua</th>
+                        <th><i class="fa-solid fa-sort"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>x</td>
+                        <td>
+                            <button><i class="fa-solid fa-eye"></i></button>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-xmark"></i></button>
+                        </td>
+                        <td>1102</td>
+                        <td>Võ Hoài An</td>
+                        <td>Mai Thục Anh</td>
+                        <td>250 000</td>
+                        <td>06 Tháng 62024 9:00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>x</td>
+                        <td>
+                            <button><i class="fa-solid fa-eye"></i></button>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-xmark"></i></button>
+                        </td>
+                        <td>1199</td>
+                        <td>Hoàng Thị Thắng</td>
+                        <td>Nguyễn Văn Hồng</td>
+                        <td>600 000</td>
+                        <td>06 Tháng 62024 9:03</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>x</td>
+                        <td>
+                            <button><i class="fa-solid fa-eye"></i></button>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-xmark"></i></button>
+                        </td>
+                        <td>1102</td>
+                        <td>Nguyễn Huy Quang</td>
+                        <td>Nguyễn Văn Hồng</td>
+                        <td>934 000</td>
+                        <td>06 Tháng 62024 9:10</td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <button class="btn_delete"><i class="fa-solid fa-xmark"></i>DELETE SELECTED RECORDS</button>
+            <hr>
+        </div>
+    </div>
+    <div class="pagination-container">
+        <div class="pagination-left">
+            <span class="pagination-label">Trang</span>
+            <ul class="pagination">
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>&gt;</li>
+                <li>&gt;&gt;</li>
+            </ul>
+        </div>
+        <div class="pagination-result"><b>Kết quả 1 trong 20 trang</b></div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-title">
+                TRƯỜNG ĐẠI HỌC THỦY LỢI
+            </div>
+            <div class="footer-info">
+                <p>Địa chỉ: 175 Tây Sơn, Đống Đa, Hà Nội</p>
+                <p>Điện thoại: (024) 38522201 - Fax: (024) 35633351</p>
+                <p>Email: <a href="mailto:phongctct@tlu.edu.vn">phongctct@tlu.edu.vn</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="form_them" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="btn_dong">&times;</span>
+            <form action="" id="form_sinhvien">
+                <h2>Thêm giao dịch</h2> <hr>
+                <label for="maSV"><b>Khách hàng</b></label> <br>
+                <input type="text" id="customer" name="customer"><br>
+
+                <label for="hoTen"><b>Nhân viên</b></label><br>
+                <input type="text" id="staff" name="staff" ><br>
+
+                <label for="email"><b>Số tiền</b></label> <br>
+                <input type="text" id="money" name="money" ><br>
+                <div class="group-button">
+                    <button type="button" id="btn_cancel">Hủy</button>
+                    <button type="submit" id="btn_luu" data-action="save">Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
